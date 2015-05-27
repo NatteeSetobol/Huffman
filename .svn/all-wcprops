@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/qpression/!svn/ver/38/trunk/huff
+END
+tree.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/qpression/!svn/ver/35/trunk/huff/tree.h
+END
+huff.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/qpression/!svn/ver/35/trunk/huff/huff.cpp
+END
+huffman.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/qpression/!svn/ver/36/trunk/huff/huffman.h
+END
+node.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/qpression/!svn/ver/8/trunk/huff/node.h
+END
+lettercount.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/qpression/!svn/ver/2/trunk/huff/lettercount.h
+END

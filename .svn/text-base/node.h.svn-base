@@ -1,0 +1,105 @@
+#ifndef node_h
+#define node_h
+class node
+{
+		private:
+			unsigned char* Letter;
+			unsigned int* Weight;
+			double *prob;
+			int* balancefactor;
+		public:
+			node* left;
+			node* right;
+			int leftcount;
+			int rightcount;
+			bool isletter;
+			node(unsigned char newletter, unsigned newweight, double newprob);
+			~node();
+			unsigned char GetLetter();
+			void SetLetter(unsigned char letter);
+			unsigned int GetWeight();
+			double GetProb();
+			void SetWeight(unsigned int w);
+			int GetBalance();
+			void SetBalance(int factor);
+			
+};
+
+
+
+node::node(unsigned char newletter, unsigned int newweight, double newprob)
+{
+	left = NULL;
+	right=NULL;	
+	Letter = new unsigned char;
+	*Letter = newletter;
+
+	Weight = new unsigned int;
+	*Weight = newweight;
+
+	prob = new double;
+	*prob = newprob;
+
+	balancefactor = new int;
+	*balancefactor = 0;
+
+	leftcount=0;
+	rightcount=0;
+
+}
+
+node::~node()
+{
+	delete Letter;
+	Letter = NULL;
+	
+	delete Weight;
+	Weight=NULL;
+
+	delete prob;
+	prob = NULL;
+
+	delete balancefactor;
+	balancefactor = NULL;
+}
+
+void node::SetBalance(int factor)
+{
+	*balancefactor = factor;
+}
+
+
+void node::SetLetter(unsigned char letter)
+{
+	*Letter = letter;
+}
+
+
+int node::GetBalance()
+{
+	return *balancefactor;
+}
+
+unsigned char node::GetLetter()
+{
+	return *Letter;
+}
+
+unsigned int node::GetWeight()
+{
+	return *Weight;
+}
+
+
+double node::GetProb()
+{
+	return *prob;
+}
+
+void node::SetWeight(unsigned int w)
+{
+	*Weight = w;
+	return ;
+}
+
+#endif
